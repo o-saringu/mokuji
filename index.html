@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="jp">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="mokuji4.css"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sample</title>
+
+  <style>
+    .parent ul{
+      display: none;
+    }
+    .active {
+      background-color:darkgrey;
+    }
+    .active ul {
+      display:block;
+    }
+
+  </style>
+
+</head>
+
+<body>
+<div class="midasi">
+<div class="title">プログラム復習コンテンツ</div>
+<div class="home"></div>
+</div>
+
+
+<div class="area">
+<input type="radio" name="tab_name"id="tab1"checked>
+<label class="tab_class"for="tab1">STUDY</label>
+<div class="content_class">
+
+<div class="mokuji">
+<h1 class="table">Table Of Contents </h1> 
+  <ul>
+    <li class="parent" onclick="func1(this)">3章　ーーーーー　描く
+      <ul>
+        <li>3-1 size</li>
+        <li>3-2 point</li>
+        <li>3-3 line</li>
+        <li>3-4 quad</li>
+        <li>3-5 triangle</li>
+        <li>3-6 rect</li>
+        <li>3-7 arc</li>
+        <li>3-8 radians</li>
+        <li>3-9 描画の順序</li>
+        <li>3-10 順序を逆にする</li>
+        <li>3-11 strokeWeight</li>
+        <li>3-12 strokeCap</li>
+        <li>3-13 strokeJoin</li>
+        <li>3-14 ellipseMode</li>
+        <li>3-18 色に透明度を与える</li>
+        <li>3-20 vertex</li>
+        <li>background</li>
+        <li>fill</li>
+        <li>stroke</li>
+      </ul>
+    </li>
+    <li class="parent" onclick="func1(this)">4章　ーーーーー　変数
+      <ul>
+        <li>4-1 変数</li>
+        <li>4-2 値の変更</li>
+        <li>4-3 ウインドウに合わせる</li>
+        <li>4-4 変数の計算</li>
+        <li>4-5 for構文</li>
+         <li>4-6  forの中にforを入れる</li>
+      </ul>
+    </li>
+  </ul>
+</div>
+</div>
+<input type="radio" name="tab_name"id="tab2">
+<label class="tab_class"for="tab2">TEST</label>
+<div class="content_class">
+
+
+<div class="mokuji2">
+<h1 class="table2">Table Of Contents </h1> 
+  <ul>
+    <li class="parent" onclick="func1(this)">3章　ーーーーー　描く
+      <ul>
+        <li>3-1 size</li>
+        <li>3-2 point</li>
+        <li>3-3 line</li>
+        <li>3-4 quad</li>
+        <li>3-5 triangle</li>
+        <li>3-6 rect</li>
+        <li>3-7 arc</li>
+        <li>3-8 radians</li>
+        <li>3-9 描画の順序</li>
+        <li>3-10 順序を逆にする</li>
+        <li>3-11 strokeWeight</li>
+        <li>3-12 strokeCap</li>
+        <li>3-13 strokeJoin</li>
+        <li>3-14 ellipseMode</li>
+        <li>3-18 色に透明度を与える</li>
+        <li>3-20 vertex</li>
+        <li>background</li>
+        <li>fill</li>
+        <li>stroke</li>
+      </ul>
+    </li>
+    <li class="parent" onclick="func1(this)">4章　ーーーーー　変数
+      <ul>
+       <li>4-1 変数</li>
+        <li>4-2 値の変更</li>
+        <li>4-3 ウインドウに合わせる</li>
+        <li>4-4 変数の計算</li>
+        <li>4-5 for構文</li>
+         <li>4-6  forの中にforを入れる</li>
+      </ul>
+    </li>
+  </ul>
+</div>
+</div>
+ <script>
+    function func1(e) {
+      e.classList.toggle("active");
+    }
+  </script>
+</body>
+</html>
