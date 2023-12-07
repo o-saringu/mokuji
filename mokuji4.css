@@ -1,0 +1,151 @@
+@charset "UTF-8";
+
+html {
+    caret-color: transparent;
+}
+
+.midasi{
+	background-color:#268AFF;
+	display:flex;
+	justify-content:center;
+	position:relative;
+}
+
+h1{
+        color:#FD9A28;
+	margin:0 auto;
+	font-size:5.4vw;
+	font-family: 'Bangers',sans-serif; 
+}
+
+.area {
+	position:relative;
+	display:flex;
+	flex-wrap:wrap;
+	top:50px;
+}
+ 
+.tab_class {
+	position:relative;
+	left:34px;
+ 	width: calc(100%/5);
+ 	height: 50px;
+ 	background-color: darkgrey;
+ 	line-height: 50px;
+ 	font-size: 2.6vw;
+ 	font-weight: bold;
+ 	text-align: center;
+ 	display: block;
+ 	border-top-left-radius: 20px;
+ 	border-top-right-radius: 20px;
+ 	float: left;
+ 	order: -1;
+	cursor: pointer; /*デフォルトではマウスオーバーでマウス表示が切り替わらない*/
+	font-family:'Oswald',sans-serif;
+}
+
+input[name="tab_name"] {
+  display: none;
+}
+
+input:checked + .tab_class {
+  background-color:#7cd719;
+  color: aliceblue;
+}
+
+.content_class {
+  display: none;
+  width: 100%;
+}
+
+input:checked + .tab_class + .content_class {
+  display: block;
+}
+
+.mokuji{
+	marign:0 auto;
+	background-color:#CCFFFF;
+	border-radius:40px 40px 40px 40px;
+	cursor: pointer; /*デフォルトではマウスオーバーでマウス表示が切り替わらない*/
+	display:grid;	
+}
+
+
+.mokuji2{
+	marign:0 auto;
+	background-color:#F4E6CD;
+	border-radius:40px 40px 40px 40px;
+	cursor: pointer; /*デフォルトではマウスオーバーでマウス表示が切り替わらない*/
+	display:grid;
+}
+
+.table{
+	top:auto;
+	text-align:center;
+	color:#268AFF;
+	font-family:'Oswald',sans-serif;
+	font-size:4vw;
+	display:grid;
+}
+
+.table2{
+	top:auto;
+	text-align:center;
+	color:#FD9A28;
+	font-family:'Oswald',sans-serif;
+	font-size:4vw;
+	display:grid;
+}
+
+.parent{
+	position:relative;
+	left:-17.2px;
+	display:grid;
+	text-align:center;
+	font-family: 'M PLUS 1p', sans-serif;
+	font-size:2.5vw;
+}
+
+.parent2{
+	position:relative;
+	left:-17.2px;
+	display:grid;
+	text-align:center;
+	font-family: 'M PLUS 1p', sans-serif;
+	font-size:2.5vw;
+}
+
+.home {
+	position: absolute;
+	font-size:2.9vw;
+	right:0;
+	margin-right:30px;
+	margin-top:3.5%;
+	width: 0.4em;
+	height: 0.4em;
+	border-top: 0.6em solid #FD9A28;
+	border-left: 0.4em solid #FD9A28;
+	border-right: 0.4em solid #FD9A28;
+}
+/* 屋根 */
+.home::before {
+	position: absolute;
+	content: "";
+	top: -1.2em;
+	left: -0.6em;
+	width: 0;
+	height: 0;
+	border-left: 0.8em solid transparent;
+	border-right: 0.8em solid transparent;
+	border-bottom: 0.8em solid #FD9A28;
+}
+/* 煙突 */
+.home::after {
+	position: absolute;
+	top: -1.0em;
+	left: 0.6em;
+	width: 0.1em;
+	height: 0.4em;
+	content: "";
+	background-color: #FD9A28;
+}
