@@ -7,119 +7,218 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sample</title>
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bangers&family=M+PLUS+1p:wght@500&family=Oswald&display=swap" rel="stylesheet">
+
   <style>
     .parent ul{
       display: none;
     }
     .active {
-      background-color:darkgrey;
+      background-color:#CCFFFF;
     }
     .active ul {
       display:block;
     }
 
+    .parent2 ul{
+      display: none;
+    }
+    .active2 {
+      background-color:#F4E6CD;
+    }
+    .active2 ul {
+      display:block;
+    }
   </style>
 
 </head>
 
 <body>
 <div class="midasi">
-<div class="title">プログラム復習コンテンツ</div>
-<div class="home"></div>
+	<h1>プログラム復習コンテンツ</h1>
+	<div class="home"></div>
 </div>
 
 
 <div class="area">
 <input type="radio" name="tab_name"id="tab1"checked>
 <label class="tab_class"for="tab1">STUDY</label>
-<div class="content_class">
-
-<div class="mokuji">
-<h1 class="table">Table Of Contents </h1> 
+	<div class="content_class">
+		<div class="mokuji">
+<h2 class="table">Table Of Contents </h2> 
   <ul>
-    <li class="parent" onclick="func1(this)">3章　ーーーーー　描く
-      <ul>
-        <li>3-1 size</li>
-        <li>3-2 point</li>
-        <li>3-3 line</li>
-        <li>3-4 quad</li>
-        <li>3-5 triangle</li>
-        <li>3-6 rect</li>
-        <li>3-7 arc</li>
-        <li>3-8 radians</li>
-        <li>3-9 描画の順序</li>
-        <li>3-10 順序を逆にする</li>
-        <li>3-11 strokeWeight</li>
-        <li>3-12 strokeCap</li>
-        <li>3-13 strokeJoin</li>
-        <li>3-14 ellipseMode</li>
-        <li>3-18 色に透明度を与える</li>
-        <li>3-20 vertex</li>
-        <li>background</li>
-        <li>fill</li>
-        <li>stroke</li>
+    <li class="parent" onclick="func1(this)">3章　ーーーーーーーー　描く
+      <ul style="list-style-type: none">
+        <li>3-1 size関数</li>
+        <li>3-2 point関数</li>
+        <li>3-3 line関数</li>
+        <li>3-4 quad関数</li>
+        <li>3-5 rect関数</li>
+        <li>3-6 triangle関数</li>
+        <li>3-7 ellipse関数</li>
+	<li>3-8 arc関数</li>
+        <li>3-9 radians関数</li>
+        <li>3-10 コードの順序</li>
+        <li>3-11 順序を逆にする</li>
+        <li>3-12 strokeWeight関数</li>
+        <li>3-13 strokeCap関数</li>
+        <li>3-14 strokeJoi関数</li>
+        <li>3-15 ellipseMode関数</li>
+        <li>3-16 透明度</li>
+        <li>3-17 vertex関数</li>
+        <li>3-18 background関数</li>
+        <li>3-19 fill関数</li>
+        <li>3-20 stroke関数</li>
       </ul>
     </li>
-    <li class="parent" onclick="func1(this)">4章　ーーーーー　変数
-      <ul>
-        <li>4-1 変数</li>
-        <li>4-2 値の変更</li>
-        <li>4-3 ウインドウに合わせる</li>
+    <li class="parent" onclick="func1(this)">4章　ーーーーーーーー　変数
+      <ul style="list-style-type: none">
+        <li>4-1 変数の利用</li>
+        <li>4-2 値を変更する</li>
+        <li>4-3 width,height変数</li>
         <li>4-4 変数の計算</li>
         <li>4-5 for構文</li>
          <li>4-6  forの中にforを入れる</li>
       </ul>
     </li>
+    <li class="parent" onclick="func1(this)">5章　ーーーーーーーー　反応
+      <ul style="list-style-type: none">
+        <li>5-1 draw関数</li>
+        <li>5-2 setup関数</li>
+        <li>5-3 mouseX変数、mouseY変数</li>
+        <li>5-4 画面をリフレッシュ</li>
+        <li>5-5 pmouseX変数、pmouseY変数</li>
+        <li>5-6 dist関数</li>
+        <li>5-7 イージング(easing)</li>
+	<li>5-8 mousePressed関数</li>
+        <li>5-9 mouseButton関数</li>
+        <li>5-10 keyPressd関数</li>
+        <li>5-11 文字を描く</li>
+        <li>5-12 keyCode変数</li>
+        <li>5-13 map関数</li>
+      </ul>
+    </li>
+<li class="parent" onclick="func1(this)">6章　ーー　移動、回転、伸縮
+      <ul style="list-style-type: none">
+        <li>6-1 translate関数</li>
+        <li>6-2 rotate関数</li>
+        <li>6-3 scale関数</li>
+        <li>6-4 pushMatrix関数、popMatrix関数</li>
+      </ul>
+    </li>
+<li class="parent" onclick="func1(this)">7章　ーーーーーー　メディア
+      <ul style="list-style-type: none">
+        <li>7-1 image関数</li>
+        <li>7-2 text関数</li>
+        <li>7-3 String関数</li>
+        <li>7-4 shape関数</li>
+      </ul>
+    </li>
+<li class="parent" onclick="func1(this)">8章　ーーーーーーーー　動き
+      <ul style="list-style-type: none">
+        <li>8-1 flameRate変数</li>
+        <li>8-2 flameRate関数</li>
+        <li>8-3 図形の移動</li>
+        <li>8-4 トゥイーニング（2点間の移動）</li>
+	<li>8-5 random関数-1</li>
+        <li>8-6 random関数-2</li>
+        <li>8-7 millis関数</li>
+        <li>8-8 millis関数の応用</li>
+	<li>8-9 sin関数、cos関数による円運動</li>
+      </ul>
+    </li>
+<li class="parent" onclick="func1(this)">9章　ーーーーーーーー　関数
+      <ul style="list-style-type: none">
+        <li>9-1 関数の作成</li>
+        <li>9-2 関数の作成の応用</li>
+        <li>9-3 return(値を返す)</li>
+      </ul>
+    </li>
+<li class="parent" onclick="func1(this)">11章　ーーーーーーーー　配列
+      <ul style="list-style-type: none">
+        <li>11-1 配列-1</li>
+        <li>11-2 配列-2</li>
+        <li>11-3 配列-3</li>
+        <li>11-4 配列-4</li>
+	<li>11-5 配列-応用（マウスを追跡する）</li>
+      </ul>
+    </li>
+<li class="parent" onclick="func1(this)">~ その他~
+      <ul style="list-style-type: none">
+        <li>データ型</li>
+        <li>演算子</li>
+        <li>配列</li>
+        <li>if構文</li>
+      </ul>
+    </li>
   </ul>
-</div>
-</div>
+		</div>
+	</div>
+
 <input type="radio" name="tab_name"id="tab2">
 <label class="tab_class"for="tab2">TEST</label>
-<div class="content_class">
-
-
-<div class="mokuji2">
-<h1 class="table2">Table Of Contents </h1> 
+	<div class="content_class">
+		<div class="mokuji2">
+<h2 class="table2">Table Of Contents </h2> 
   <ul>
-    <li class="parent" onclick="func1(this)">3章　ーーーーー　描く
-      <ul>
-        <li>3-1 size</li>
-        <li>3-2 point</li>
-        <li>3-3 line</li>
-        <li>3-4 quad</li>
-        <li>3-5 triangle</li>
-        <li>3-6 rect</li>
-        <li>3-7 arc</li>
-        <li>3-8 radians</li>
-        <li>3-9 描画の順序</li>
-        <li>3-10 順序を逆にする</li>
-        <li>3-11 strokeWeight</li>
-        <li>3-12 strokeCap</li>
-        <li>3-13 strokeJoin</li>
-        <li>3-14 ellipseMode</li>
-        <li>3-18 色に透明度を与える</li>
-        <li>3-20 vertex</li>
-        <li>background</li>
-        <li>fill</li>
-        <li>stroke</li>
+    <li class="parent2" onclick="func2(this)">3章　ーーーーーーーー　描く
+      <ul style="list-style-type: none">
+        <li>3-1 図形を描く　初級</li>
+        <li>3-2 図形を描く　中級</li>
+        <li>3-3 図形を描く　上級</li>
+        <li>3-4 形を作る</li>
       </ul>
     </li>
-    <li class="parent" onclick="func1(this)">4章　ーーーーー　変数
-      <ul>
-       <li>4-1 変数</li>
-        <li>4-2 値の変更</li>
-        <li>4-3 ウインドウに合わせる</li>
-        <li>4-4 変数の計算</li>
-        <li>4-5 for構文</li>
-         <li>4-6  forの中にforを入れる</li>
+    <li class="parent2" onclick="func2(this)">4章　ーーーーーーーー　変数
+      <ul style="list-style-type: none">
+	<li>4-1 変数の宣言　初級</li>
+        <li>4-2 変数の宣言　中級</li>
+        <li>4-3 変数の宣言　上級</li>
+        <li>4-4 繰り返し　初級</li>
+        <li>4-5 繰り返し　中級</li>
+        <li>4-6 繰り返し　上級</li>
       </ul>
     </li>
+<li class="parent2" onclick="func2(this)">5章　ーーーーーーーー　反応
+      <ul style="list-style-type: none">
+        <li>5-1 setupとdraw　初級</li>
+        <li>5-2 setupとdraw　中級</li>
+        <li>5-3 setupとdraw　上級</li>
+        <li>5-4 判定　初級</li>
+        <li>5-5 判定　中級</li>
+        <li>5-6 判定　上級</li>
+        <li>5-7 カーソルの位置　初級</li>
+	<li>5-8 カーソルの位置　中級</li>
+        <li>5-9 カーソルの位置　上級</li>
+      </ul>
+    </li>
+<li class="parent2" onclick="func2(this)">9章　ーーーーーーーー　関数
+      <ul style="list-style-type: none">
+        <li>9-1 関数の作成　初級</li>
+        <li>9-2 関数の作成　中級</li>
+        <li>9-3 関数の作成　上級</li>
+	<li>9-4 値を返す関数</li>
+      </ul>
+    </li>
+<li class="parent2" onclick="func2(this)">11章　ーーーーーーーー　配列
+      <ul style="list-style-type: none">
+        <li>11-1 配列の作成　初級</li>
+        <li>11-2 配列の作成　中級</li>
+        <li>11-3 配列の作成　上級</li>
   </ul>
+		</div>
+	</div>
 </div>
-</div>
+
  <script>
     function func1(e) {
       e.classList.toggle("active");
+    }
+
+function func2(e) {
+      e.classList.toggle("active2");
     }
   </script>
 </body>
